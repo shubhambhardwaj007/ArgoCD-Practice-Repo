@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: apache-webserver-argocd
+spec:
+  selector:
+    matchLabels:
+      app: mywebserver
+  replicas: 2
+  template:
+    metadata:
+      labels:
+        app: mywebserver
+    spec:
+      containers:
+      - name: webserver-container
+        image: shubhamb0007/versioning:v1
+        ports:
+        - containerPort: 80
