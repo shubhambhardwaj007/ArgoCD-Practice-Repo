@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
       - name: webserver-container
-        image: gcr.io/searce-playground-v1/shubham-versioning:2d6aaab 
+        image: gcr.io/searce-playground-v1/shubham-versioning:2a644a3 
         ports:
         - containerPort: 80
